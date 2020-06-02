@@ -120,6 +120,7 @@
 }
 
 .block:hover .card-text {
+    transition: 1s ease;
     height: 100%;
     width: 100%;
 }
