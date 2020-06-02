@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: auto;
+    padding: 25px 0 25px;
+    height: 747px;
+}
+
+.block1 {
+    background-image: url(../img/linoleum.jpg);
+    margin: 0 25px 25px 0;
+}
+
+.block2 {
+    background-image: url(../img/kovrolin.jpg);
+    height: 450px;
+    width: 293px;
+}
+
+.block3 {
+    background-image: url(../img/laminat.jpg);
+    margin: 0 25px 25px 0;
+}
+
+.block4 {
+    background-image: url(../img/kvarcvinil.jpg);
+    height: 200px;
+    width: 427px;
+    margin: 10px 0 25px -63px;
+}
+
+.block5 {
+    background-image: url(../img/probka.jpg);
+    margin-left: -66px;
+
+}
+
+.block6 {
+    background-image: url(../img/parket.jpg);
+    width: 360px;
+    height: 450px;
+    margin-bottom: 25px;
+}
+
+.block7 {
+    background-image: url(../img/aksessuar.jpg);
+    height: 215px;
+    width: 424px;
+    margin-left: -60px;
+}
+
+.block1,
+.block3,
+.block5 {
+    height: 215px;
+    width: 360px;
+}
+
+.block {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    height: 52px;
+    width: 60%;
+    background-color: #002236;
+    opacity: 0.8;
+    border-bottom: 5px solid #f4391a;
+    font-family: SourceSansPro;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 5px 0 0 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    align-self: center;
+    width: 160px;
+    height: 43px;
+    background-color: #f4841a;
+    border-radius: 20.0px;
+    line-height: 43px;
+    text-align: center;
+    z-index: 1;
+}
+
+.button a {
+    font-family: SourceSansPro;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f4391a;
+}
+
+.block:hover .button {
+    display: block;
+}
+
+.block:hover .card-text {
+    height: 100%;
+    width: 100%;
+}
+
