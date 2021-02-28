@@ -96,9 +96,59 @@
     margin-left: 35px;
 }
 
-.information_box {
-
+.sidebar_info {
+    padding: 30px 0 0 50px;
 }
+
+.availability {
+    font-family: FuturaDemiC;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.car_brand {
+    font-family: FuturaDemiC;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.number_auto {
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.sidebar_info p span {
+    color: #AAB8CB;
+}
+
+.sidebar_infobox {
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rating_auto {
+    color: #4865FF;
+}
+
+.sidebar_infobox p span {
+    color: #AAB8CB;
+}
+
 
 /*Car condition*/
 
