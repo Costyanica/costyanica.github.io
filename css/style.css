@@ -31,6 +31,13 @@
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
+    color: #AAB8CB;
+    padding-bottom: 10px;
+}
+
+.header__navigation li:active {
+    color: #000000;
+    border-bottom: 2px solid #4865FF;
 }
 
 .main_image {
@@ -46,7 +53,7 @@
 
 .auto_image {
     position: relative;
-    right: 460px;
+    right: 565px;
     bottom: 28px;
     width: 17%;
     height: auto;
@@ -68,8 +75,8 @@
 
 .start_the_car {
     background-color: #fff;
-    left: 328px;
-    bottom: 266px;
+    left: 403px;
+    bottom: 308px;
 }
 
 /*Sidebar*/
@@ -100,13 +107,20 @@
     padding: 30px 0 0 50px;
 }
 
+.sidebar_title {
+    margin: 0 0 55px 0;
+}
+
+.sidebar_title p {
+    margin: 0;
+}
+
 .availability {
     font-family: FuturaDemiC;
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0em;
-    margin: 0;
 }
 
 .car_brand {
@@ -115,7 +129,6 @@
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.02em;
-    margin: 0;
 }
 
 .number_auto {
@@ -124,7 +137,6 @@
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.02em;
-    margin: 0;
 }
 
 .sidebar_info p span {
@@ -133,22 +145,100 @@
 
 .sidebar_infobox {
     font-family: FuturaDemiC;
-    font-size: 20px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0 0 55px 0;
+}
+
+.sidebar_infobox p {
+    margin: 0 0 15px 0;
 }
 
 .rating_auto {
     color: #4865FF;
 }
 
+.rating_auto__star {
+    width: 3%;
+    height: auto;
+}
+
 .sidebar_infobox p span {
     color: #AAB8CB;
 }
 
+.sidebar_comment {
+    margin: 0 55px 35px 0;
+}
+
+.sidebar_comment__title {
+    font-family: FuturaDemiC;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color:#AAB8CB;
+    margin: 0 0 10px 0;
+} 
+
+.sidebar_comment__box {
+    background-color: #E6EBF5;
+    padding: 15px;
+    border-radius: 23px;
+}
+
+.sidebar_comment__box p {
+    margin: 0;
+}
+
+.user {
+    font-family: FuturaDemiC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+}
+
+.comment_text {
+    font-family: FuturaBookC;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.button_rating {
+    font-family: FuturaDemiC;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    border: 2px solid #BECCE0;
+    border-radius: 34px;
+    padding: 15px;
+}
+
+.button_rating span::after {
+    content: "";
+	display: inline-block;
+	position: relative;
+	width: 0.4em;
+    height: 0.4em;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    top: -1px;
+}
 
 /*Car condition*/
 
