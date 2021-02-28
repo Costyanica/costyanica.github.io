@@ -1,0 +1,20 @@
+/* @font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/futurademic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/futurabookc.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/6556.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

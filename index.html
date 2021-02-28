@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Напольные покрытия</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\style.css">
+    <title>Каршеринг</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="block block1">
-            <div class="button">
-                <a href="">смотреть </a>
+    <section class="promo">
+        <div class="main_container">
+            <div class="container">
+                <header class="header">
+                    <ul class="header__navigation">
+                        <li>МОИ АВТОМОБИЛИ</li>
+                        <li>НАСТРОЙКИ</li>
+                        <li>ФИНАНСЫ</li>
+                        <li>...</li>
+                    </ul>
+                </header>
+                <div class="main_image">
+                    <img class="fon_image" src="./img/Vector 2.jpg" alt="Фоновое изображение">
+                    <img class="auto_image" src="./img/auto.png" alt="Автомобиль">
+                    <div class="temperature">
+                        <div class="engine">84C° двигатель </div>
+                        <div class="autoshow">22С° в салоне</div>
+                    </div>
+                    <div class="control_buttons">
+                        <button class="start_the_car"><img src="./img/Start.svg" alt=""></button>
+                        <p>заведено</p>
+                        <button class="signal"><img src="" alt=""></button>
+                        <button class="security"><img src="" alt=""></button>
+                        <p>охрана вкл</p>
+                        <button class="headlights"><img src="./img/headlight.svg" alt=""></button>
+                        <button class="closing"><img src="./img/closing.svg" alt=""></button>
+                        <p>закрыто</p>
+                    </div> 
+                </div>
             </div>
-            <div class="card-text">Линолеум</div>
+            <aside class="sidebar">
+                <div class="sidebar_image">
+                    <img class="eye_logo" src="./img/eye.svg" alt="">
+                    <img class="geo_logo" src="./img/geo.svg" alt="">
+                </div>
+                <div class="sidebar_title">
+                    <p class="availability">ваш автомобиль доступен для аренды</p>
+                    <p class="car_brand">Skoda Rapid <span>2017</span></p>
+                    <p class="number">Т312КТ799</p>
+                </div>
+                <div class="information_box">
+                    <p class="status_auto"><span>Статус авто:</span>в эксплуатации</p>
+                    <p class="rating_auto"><span>Общий рейтинг:</span>4.7 <img src="./img/star.svg" alt=""> </p>
+                    <p class="people"><span>Люди в салоне:</span> 3 человека</p>
+                    <p class="service"><span>Обслуживание:</span> ожидание мойки</p>
+                </div>
+                <div class="comment">
+                    <span class="comment_title">Последний отзыв</span>
+                    <div class="comment_box">
+                        <p class="user">Иванов В.</p>
+                        <p class="comment_text"> В салоне были щетки для чистки стекла, это хорошо.
+                            Но не было держателя для телефона, это минус :( ...</p>
+                    </div>
+                </div>
+                <button class="rating">рейтинг авто подробно</button>
+            </aside>
         </div>
-        <div class="block block2">
-            <div class="button">
-                <a href="">смотреть </a>
+        <div class="car_condition">
+            <div class="petrol">
+                <p>Уровень бензина</p>
+                <p>73%</p>
             </div>
-            <div class="card-text">Ковролин</div>
-        </div>
-        <div class="block block3">
-            <div class="button">
-                <a href="">смотреть</a>
+            <div class="battery">
+                <p>Заряд аккумулятора</p>
+                <p>14V</p>
             </div>
-            <div class="card-text">Ламинат</div>
-        </div>
-        <div class="block block4">
-            <div class="button">
-                <a href="">смотреть</a>
+            <div class="mileage">
+                <p>Пробег, км</p>
+                <p>3,4K</p>
             </div>
-            <div class="card-text">Кварцвинил</div>
-        </div>
-        <div class="block block5">
-            <div class="button">
-                <a href="">смотреть </a>
+            <div class="card_balance">
+                <p>Баланс карты, руб</p>
+                <p>5,8K</p>
             </div>
-            <div class="card-text">Пробка</div>
         </div>
-        <div class="block block6">
-            <div class="button">
-                <a href="">смотреть </a>
-            </div>
-            <div class="card-text">Паркет</div>
-        </div>
-        <div class="block block7">
-            <div class="button">
-                <a href="">смотреть </a>
-            </div>
-            <div class="card-text">Акссесуры</div>
-        </div>
-    </div>
-    <script src="script.js"></script> 
+        <footer class="footer">
+            <ul class="footer_navigation">
+                <li><a href="">Об автомобиле</a></li>
+                <li><a href=""> Характеристика</a></li>
+                <li><a href="">История поездок</a></li>
+                <li><a href="">Штрафы</a></li>
+                <li><a href="">Настройка аренды</a></li>
+                <li><a href="">Обслуживание</a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
