@@ -94,6 +94,7 @@
     flex-flow: row nowrap;
     align-items: flex-end;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .temperature div {
@@ -107,6 +108,43 @@
     font-size: 34px;
     line-height: 14px;
     letter-spacing: 0em;
+}
+
+.back {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back__button {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: 2px solid #D5DBEB;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.back__button span::after {
+    content: "";
+	display: inline-block;
+	position: relative;
+	width: 0.4em;
+    height: 0.4em;
+    border-right: 1.5px solid #000000;
+    border-top: 1.5px solid #000000;
+    transform: rotate(-135deg);
+    margin-left: 3px;
+    top: -1px;
+}
+
+.back__text {
+    font-size: 12px;
+    line-height: 41px;
+    letter-spacing: 0.06em;
+    writing-mode: tb-rl;
+    color: #AAB8CB;
+    margin: 0;
 }
 
 .control_buttons button {
@@ -131,7 +169,7 @@
 }
 
 .control_buttons__first {
-    height: 195px;
+    height: 60px;
     width: 86%;
     margin-left: auto;
     margin-right: auto;
