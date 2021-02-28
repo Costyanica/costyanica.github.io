@@ -1,17 +1,56 @@
 .promo {
     display: flex;
     flex-flow: column nowrap;
+    font-family: FuturaDemiC, normal;
 }
+
+/*Sidebar*/
+
+.sidebar {
+    position: absolute;
+    width: 50px;
+    height: 1200px;
+    cursor: pointer;
+}
+
+.sidebar_inner {
+    position: absolute;
+    height: 1200px;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    background: #131314;
+    border-radius: 0 20px 20px 0;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.sidebar:hover ~ .sidebar_inner {
+    left: 0;
+}
+  
+.sidebar_inner:hover {
+    left: 0;
+}
+
+.sidebar_iner__wrapper {
+    height: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Main container*/
 
 .main_container {
     display: flex;
     flex-flow: row wrap;
-    height: 1200px;
 }
 
 
 .container {
-    flex: 2 1 600px;
+    flex: 3 1 600px;
 }
 
 .header__navigation {
@@ -24,13 +63,9 @@
 
 .header__navigation li {
     text-decoration: none;
-    font-family: "FuturaDemiC";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 18px;
     letter-spacing: 0em;
-    text-align: left;
     color: #AAB8CB;
     padding-bottom: 10px;
 }
@@ -41,53 +76,101 @@
 }
 
 .main_image {
-    position: absolute;
-}
-
-.fon_image {
-    position: relative;
-    width: 65%;
-    height: auto;
-    z-index: 1;
+    background-image: url(../img/Vector\ 2.jpg);
+    background-repeat: no-repeat;
+    background-position: left -5%;
+    background-size: 97%;
 }
 
 .auto_image {
-    position: relative;
-    right: 565px;
-    bottom: 28px;
-    width: 17%;
-    height: auto;
+    background: no-repeat center/24% url(../img/auto.png);
+    height: 800px;
     z-index: 2;
 }
 
+.temperature {
+    height: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.temperature div {
+    color: #8E98AD;
+    font-size: 18px;
+    line-height: 14px;
+    letter-spacing: 0.105em;
+}
+
+.temperature span { 
+    font-size: 34px;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+
 .control_buttons button {
-    position: relative;
+    background-color:#D5DBEB;
     height: 65px;
     width: 65px;
     border-radius: 100%;
-    z-index: 3;
     border-style: none;
+    cursor: pointer;
+}
+
+
+.control_buttons p {
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.105em;
+    color: #949CAD;
 }
 
 .control_buttons button img {
     width: 50%;
 }
 
-.start_the_car {
-    background-color: #fff;
-    left: 403px;
-    bottom: 308px;
+.control_buttons__first {
+    height: 195px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
-/*Sidebar*/
+.start {
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.sidebar {
-    flex: 1 1 300px;
+.start button {
+    background: #fff !important;
+}
+
+.control_buttons__second {
+    height: 150px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/*Aside*/
+
+.aside {
+    flex: 1 1 200px;
     background-color: #F1F4FA;
     border-bottom-left-radius: 50px;
 }
 
-.sidebar_image {
+.aside_image {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -103,58 +186,47 @@
     margin-left: 35px;
 }
 
-.sidebar_info {
+.aside_info {
     padding: 30px 0 0 50px;
 }
 
-.sidebar_title {
+.aside_title {
     margin: 0 0 55px 0;
 }
 
-.sidebar_title p {
+.aside_title p {
     margin: 0;
 }
 
 .availability {
-    font-family: FuturaDemiC;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     letter-spacing: 0em;
 }
 
 .car_brand {
-    font-family: FuturaDemiC;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
     letter-spacing: 0.02em;
 }
 
 .number_auto {
-    font-family: FuturaDemiC;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    line-height: 25px;
+    letter-spacing: 0.08em;
 }
 
-.sidebar_info p span {
+.aside_info p span {
     color: #AAB8CB;
 }
 
-.sidebar_infobox {
-    font-family: FuturaDemiC;
+.aside_infobox {
     font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 16px;
     letter-spacing: 0em;
-    text-align: left;
     margin: 0 0 55px 0;
 }
 
-.sidebar_infobox p {
+.aside_infobox p {
     margin: 0 0 15px 0;
 }
 
@@ -167,40 +239,34 @@
     height: auto;
 }
 
-.sidebar_infobox p span {
+.aside_infobox p span {
     color: #AAB8CB;
 }
 
-.sidebar_comment {
+.aside_comment {
     margin: 0 55px 35px 0;
 }
 
-.sidebar_comment__title {
-    font-family: FuturaDemiC;
+.aside_comment__title {
     font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 17px;
     letter-spacing: 0em;
     color:#AAB8CB;
     margin: 0 0 10px 0;
 } 
 
-.sidebar_comment__box {
+.aside_comment__box {
     background-color: #E6EBF5;
     padding: 15px;
     border-radius: 23px;
 }
 
-.sidebar_comment__box p {
+.aside_comment__box p {
     margin: 0;
 }
 
 .user {
-    font-family: FuturaDemiC;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 39px;
     letter-spacing: 0.02em;
     text-decoration: underline;
@@ -208,23 +274,20 @@
 
 .comment_text {
     font-family: FuturaBookC;
-    font-size: 10px;
-    font-style: normal;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
 }
 
 .button_rating {
-    font-family: FuturaDemiC;
     font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 17px;
     letter-spacing: 0em;
     border: 2px solid #BECCE0;
     border-radius: 34px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .button_rating span::after {
@@ -248,19 +311,29 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    font-family: FuturaDemiC;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 30px;
+    padding-left: 50px;
+}
+
+div .description {
+    font-size: 23px;
+    line-height: 18px;
+    letter-spacing: 0.105em;
+    text-align: center
+}
+
+div .value {
+    font-size: 66px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: center;
 }
 
 /*Footer*/
 
 .footer {
-    height: 140px;
-    width: auto;
-    border-top-style: 2px solid #F1F4FA;
+    border-top: 2px solid #9FABBC;
 }
 
 .footer_navigation {
@@ -269,7 +342,23 @@
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
+    height: 100px;
+    width: auto;
+    margin: 0;
 }
+
+.footer_navigation li {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #9FABBC;
+}
+
+.footer_navigation li:active {
+    color: #000000;
+}
+
+
 
 .footer_navigation a {
     text-decoration: none;

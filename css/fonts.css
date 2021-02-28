@@ -7,14 +7,14 @@
 
 @font-face {
     font-family: 'FuturaBookC';
-    src: url('../fonts/futurabookc.ttf') format('ttf');
+    src: url('../fonts/futurabookc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('../fonts/6556.ttf') format('truetype');
+    src: url('../fonts/futurademic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
