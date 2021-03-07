@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 80%;
+}
+
+.menu li {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #AAB8CB;
+    padding-bottom: 10px;
+}
+
+.user {
+    width: 20%;
+}
