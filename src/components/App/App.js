@@ -13,7 +13,7 @@ const props = {
 const App = () => {
 
   const columns = [
-    { field: 'number', headerName: 'Регистрац.знак', width: 70 },
+    { field: 'number', headerName: 'Регистрац.знак', width: 130 },
     { field: 'brand', headerName: 'Марка', width: 130 },
     { field: 'model', headerName: 'Модель', width: 130 },
     {
